@@ -1,0 +1,351 @@
+*{
+	margin:0 auto;
+	font-family: Raleway;
+}
+body {
+	background-color:#f4f4f4;
+}
+header {
+    width: 100%;
+    Height: 125px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-bottom: 2px solid #373737;
+    position: fixed;
+    z-index:1;
+}
+nav {
+    margin-left: -100px;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: 0.5s;
+    border-bottom: 2px solid #373737;
+}
+nav ul li{
+	display: inline;
+	margin: 0 60px;
+	font-size: 20px;
+	padding: 0 10px;
+	transition: 0.5s;
+}
+nav ul li a{
+	text-decoration:none;
+	color: #373737;
+	transition:0.5s;
+}
+nav ul li:hover{
+    background-color: #373737;
+	transition:0.5s;
+}
+nav ul li:hover a {
+    color:#dcd0c0;
+}
+header h1 {
+    margin: 25px;
+}
+.header{
+    display:none;
+}
+.dripDrop{
+    display:none;
+}
+.div1 {
+    position: absolute;
+    top: 100px;
+    z-index:0;
+}
+p {
+    margin: 0 200px;
+    font-size: 20px;
+    text-indent: 75px;
+}
+.p1 {
+    margin-top: 100px;
+}
+.imgDiv{
+    position: absolute;
+    margin-top: 700px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-image: url(../Images/image1.png);
+    background-attachment:fixed;
+}
+.scrollText{
+    position:absolute;
+    margin-top: 1150px;
+}
+.p1Scroll {
+    position:absolute;
+    margin-top: 200px;
+}
+.menu {
+    position: absolute;
+    margin-top: 150px;
+    left: 50px;
+    display: inline;
+}
+.listTitle {
+    font-size: 24px;
+    font-weight: bold;
+    list-style:none;
+    text-decoration: underline;
+    margin: 25px 0;
+}
+.menuItem{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    display: inline;
+    white-space: nowrap;
+}
+.menuDescription{
+    font-size: 16px;
+    text-indent: 40px;
+    margin: 20px 0;
+    white-space: nowrap;
+}
+#Lunch{
+    display: inline;
+    position: absolute;
+    margin-left: 55vw;
+    top: 400px;
+}
+#drinks {
+    display: inline;
+    position: absolute;
+    top: 400px;
+}
+.menuImgDiv {
+    top: 200px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-image: url("../Images/food.jpg");
+    background-attachment: fixed;
+}
+@media only screen and (max-width : 916px) {
+    .menu{
+        text-align:center;
+    }
+    #drinks{
+        display: block;
+        position: relative;
+        font-size: 40px;
+        margin: 0 25vw;
+    }
+    #Lunch{
+        margin-top: 100px;
+        display: block;
+        position: relative;
+        margin: 0 25vw;
+        font-size: 40px;
+    }
+    .p1Scroll{
+        margin-top: 150px;
+    }
+    .imgDiv{
+        margin-top: 1500px
+    }
+    .scrollText {
+        margin-top: 2000px
+    }
+    header {
+        display: none;
+    }
+    .div1 {
+        position:absolute;
+        top: 100px;
+    }
+    p {
+        margin: 0 20px;
+        font-size: 16px;
+        z-index: 0;
+        text-indent: 10px;
+    }
+    .p1 {
+        margin-top: 30px
+    }
+    .header {
+        height: 100px;
+        width: 100%;
+        background-color: #f4f4f4;
+        float: left;
+        display: inline-block;
+        position: relative;
+        border-bottom: 2px solid #373737;
+        border-top: 2px solid #373737;
+        position: fixed;
+        z-index: 1;
+    }
+    .dripDrop {
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        right:0;
+        background-color: #373737;
+        margin-top: 104px;
+        transition: 0.4s;
+        text-align: center;
+        display: block;
+        position:fixed;
+        z-index:1;
+    }
+    .nav {
+        list-style: none;
+    }
+    .nav li{
+         margin: 20px 0;
+         margin-left: -35px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: #dcd0c0;
+        font-size: 25px;
+    }
+    #clickDropDown {
+        position: absolute;
+        right: 0;
+        margin: 25px 30px;
+    }
+    #clickDropDown:hover {
+        cursor:pointer;
+    }
+    h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -30px;
+        margin-top: -15px;
+    }
+    .expand {
+        height: 275px;
+        text-align: center;
+    }
+    .nav li a:hover{
+        color: #c0b383;
+    }
+}
+@media only screen and (max-width:634px){
+    .menu {
+        text-align: center;
+    }
+
+    #drinks {
+        display: block;
+        position: relative;
+        font-size: 40px;
+        margin: 0 10vw;
+    }
+
+    #Lunch {
+        margin-top: 100px;
+        display: block;
+        position: relative;
+        margin: 0 10vw;
+        font-size: 40px;
+    }
+
+    .p1Scroll {
+        margin-top: 150px;
+    }
+
+    .imgDiv {
+        margin-top: 1500px
+    }
+
+    .scrollText {
+        margin-top: 2000px
+    }
+
+    header {
+        display: none;
+    }
+
+    .div1 {
+        position: absolute;
+        top: 100px;
+    }
+
+    p {
+        margin: 0 20px;
+        font-size: 16px;
+        z-index: 0;
+        text-indent: 10px;
+    }
+
+    .p1 {
+        margin-top: 30px
+    }
+
+    .header {
+        height: 100px;
+        width: 100%;
+        background-color: #f4f4f4;
+        float: left;
+        display: inline-block;
+        position: relative;
+        border-bottom: 2px solid #373737;
+        border-top: 2px solid #373737;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .dripDrop {
+        width: 200px;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        background-color: #373737;
+        margin-top: 104px;
+        transition: 0.4s;
+        text-align: center;
+        display: block;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav {
+        list-style: none;
+    }
+
+        .nav li {
+            margin: 20px 0;
+            margin-left: -35px;
+        }
+
+            .nav li a {
+                text-decoration: none;
+                color: #dcd0c0;
+                font-size: 25px;
+            }
+
+    #clickDropDown {
+        position: absolute;
+        right: 0;
+        margin: 25px 30px;
+    }
+
+        #clickDropDown:hover {
+            cursor: pointer;
+        }
+
+    h2 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -30px;
+        margin-top: -15px;
+    }
+
+    .expand {
+        height: 275px;
+        text-align: center;
+    }
+
+    .nav li a:hover {
+        color: #c0b383;
+    }
+}
